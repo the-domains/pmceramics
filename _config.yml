@@ -1,0 +1,28 @@
+name: PMCeramics
+favicon: null
+layout_spectrum: 0.7638971249107271
+typography_spectrum: 0.7337347583379596
+cta:
+  domain: null
+  bucket: null
+  version: null
+analytics:
+  google: null
+  facebook: null
+  twitter: null
+opengraph:
+  image: null
+  type: null
+  appId: null
+color:
+  brandColors:
+    - '#A690A4'
+    - '#B68F9D'
+    - '#C8ACAB'
+    - '#FBB9BF'
+    - '#E376B7'
+  brandStrength: 0.7367658263538033
+  lightness: 0.9354710581246763
+  saturation: 0.059344968758523464
+  rhythmicContrast: 0.6067980080842972
+purpose: []
