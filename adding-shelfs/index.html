@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Adding Shelf's - PMCeramics</title><link href="../rss.xml" title="Tiles and tiling feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="dddf9fad-3def-490b-b78a-b0ee52d11a83"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Adding Shelf's - PMCeramics</title><link href="../rss.xml" title="Tiles and tiling feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="81422502-d9b2-4703-b90a-326129ea8a4a"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -1100,7 +1135,7 @@ display: none;
             </g>
         </g>
     </g>
-</svg></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_short_headline w_short_title w_long_paragraph w_long_text stack textual" itemid="8f3d5324-a5fb-46c4-800a-8ee0256041ae" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae"><div kind="group" index="textual" class="group textual group textual" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-headline"><span class="text-decoration" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-headline-span">Adding Shelf's</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-paragraph"><p><span class="first-letter">P</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>MCeramics</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#x2013;</span>The Proper Way to do it!</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>A</span>re you looking for some of the ways on how to drill on your tiled <wbr class="w480 w960"></wbr>wall? Below is the simple <wbr class="w481 w1799"></wbr>approach <wbr class="w961"></wbr>to secure the tiles that you <wbr class="w480"></wbr>start <wbr class="w960 w1800"></wbr>on drilling. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>S</span>elect Drill Bit. You have to understand that the regular drill bit <wbr class="w480 w960"></wbr>was not strong enough. You will <wbr class="w481 w1799"></wbr>also <wbr class="w961"></wbr>have a hard time drilling <wbr class="w480 w960 w1800"></wbr>through the hard tile surface. There are 2 common drill bits <wbr class="w480 w481 w960 w1799"></wbr>recommended <wbr class="w961"></wbr>for such task. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Y</span>ou can make use of carbide tipped masonry drill bits as the most <wbr class="w480 w960"></wbr>widely used and known for tile <wbr class="w481 w961 w1799"></wbr>drill. These are designed to get <wbr class="w480 w960 w1800"></wbr>through the rock hard surfaces. These can be used even without <wbr class="w480 w481 w960 w961 w1799"></wbr>causing the tile to crack or break. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>he other one is known as the diamond tipped drill bit. This is <wbr class="w480 w960"></wbr>durable and is recommended by a <wbr class="w481 w1799"></wbr>lot <wbr class="w961"></wbr>of professional individuals <wbr class="w480 w960"></wbr>for a <wbr class="w1800"></wbr>boring hard tile surface. This can be very expensive (Not <a href="http://TileDrill.com"><wbr class="w480 w481 w960 w961 w1799"></wbr>TileDrill.com</a>) but you may still want to spend your money on it.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="ac26cc11-c709-4d08-9770-051024cec6eb" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-ac26cc11-c709-4d08-9770-051024cec6eb"><div kind="group" index="column" class="group column group column" id="u-ac26cc11-c709-4d08-9770-051024cec6eb-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-ac26cc11-c709-4d08-9770-051024cec6eb-g-column-t-paragraph"><p><span class="first-letter">B</span>reaking Ground. The hardest part of tile drilling without <wbr class="w480"></wbr>ruining <wbr class="w960"></wbr>it is on getting through the <wbr class="w481 w961 w1799"></wbr>glazed hardened outer <wbr class="w480"></wbr>surface. <wbr class="w960 w1800"></wbr>Remember that tiles are known to be &#x201C;strong&#x201D;. They can <wbr class="w480"></wbr>also <wbr class="w481 w960 w961 w1799"></wbr>withstand the different types of abuses.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>hey are known for their durability and for being drilling <wbr class="w480 w960"></wbr>resistant. The bit can skip around the <wbr class="w481 w961 w1799"></wbr>surface than bite to the tile. <wbr class="w480 w960"></wbr>But, <wbr class="w1800"></wbr>there are some tricks of trade you can employ to do this <wbr class="w480 w481 w960 w1799"></wbr>effectively.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Y</span>ou can start by making an X mark on the tile since this will <wbr class="w480"></wbr>serve <wbr class="w960"></wbr>as your guide in drilling. Use <wbr class="w481 w961 w1799"></wbr>masking tape for this process <wbr class="w480"></wbr>is <wbr class="w960 w1800"></wbr>essential. Make sure that your measure it again after placing <wbr class="w480"></wbr>the <wbr class="w481 w960 w961 w1799"></wbr>masking tape. This is to make it sure that it is not misplaced. <wbr class="w480"></wbr>And <wbr class="w960 w1800"></wbr>then, start drilling into the <wbr class="w481 w961 w1799"></wbr>masking tape. Moreover, the <wbr class="w480"></wbr>masking <wbr class="w960"></wbr>tape provides your bit with an adequate &#x201C;surface <wbr class="w480"></wbr>traction&#x201D; <wbr class="w481 w1799"></wbr>for <wbr class="w961"></wbr>that <wbr class="w960 w1800"></wbr>accurate result. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>B</span>oring Through: Once you start drilling, be patient in doing it <wbr class="w480 w960"></wbr>until it breaks through.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="e1e497ef-84d5-4365-a16b-ca4a0639192b" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b"><div kind="group" index="column" class="group column group column" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b-g-column-t-paragraph"><p><span class="first-letter">I</span>f your tile is hard, this will take several times. Thus, you need to <wbr class="w480 w960"></wbr>start slowly using while <wbr class="w481"></wbr>gradually <wbr class="w961 w1799"></wbr>increasing the speed 800 &#x2013; <wbr class="w480"></wbr>1000 <wbr class="w960 w1800"></wbr>RPM. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>B</span>ear in mind that tile drilling is not about the speed but the <wbr class="w480 w960"></wbr>persistence. You need to apply a firm <wbr class="w481 w961 w1799"></wbr>and constant pressure. This <wbr class="w480 w960"></wbr>should <wbr class="w1800"></wbr>not be in excess since this causes a tile breakage. You drill <wbr class="w480 w960"></wbr>tip <wbr class="w481 w961 w1799"></wbr>must be kept &#x201C;lubricated&#x201D; to avoid it from wearing down, <wbr class="w480 w960"></wbr>breaking or <wbr class="w1800"></wbr>overheating. The safest way <wbr class="w481 w1799"></wbr>of <wbr class="w961"></wbr>lubricating and <wbr class="w480"></wbr>cooling <wbr class="w960"></wbr>is by applying water. You can create a hose system for you <wbr class="w480"></wbr>to best <wbr class="w481 w960"></wbr>deliver <wbr class="w1799"></wbr>a <wbr class="w961 w1800"></wbr>constant water trickle on the bit; you can also <wbr class="w480"></wbr>spray it with <wbr class="w960"></wbr>water. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>he Backside: Once you get through the tile, the pressure is off. <wbr class="w480"></wbr>To <wbr class="w960"></wbr>finish the project, you need to <wbr class="w481 w961 w1799"></wbr>drill to push through the <wbr class="w480"></wbr>mounting <wbr class="w960 w1800"></wbr>surface or wall board. You need to decrease the <wbr class="w480"></wbr>pressure and <wbr class="w481 w961 w1799"></wbr>speed. <wbr class="w960"></wbr>And then, simply switch it to a regular tile <wbr class="w480"></wbr>drill bit to end the <wbr class="w1800"></wbr>hole </p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading-t-headline-a">Tiles and tiling feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title w_list w_data w_short_list w_short_data layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_short_headline w_short_title w_long_paragraph w_long_text layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-3-l-one"></div><style id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-color">body{background-color: rgba(211, 200, 210, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title w_list w_data w_short_list w_short_data layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_short_headline w_short_title w_long_paragraph w_long_text layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-3-l-one"></div><style id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-color">body{background-color: rgba(211, 200, 210, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+</svg></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_short_headline w_short_title w_long_paragraph w_long_text stack textual" itemid="8f3d5324-a5fb-46c4-800a-8ee0256041ae" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae"><div kind="group" index="textual" class="group textual group textual" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-headline"><span class="text-decoration" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-headline-span">Adding Shelf's</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-t-paragraph"><p><span class="first-letter">P</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>MCeramics</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#x2013;</span>The Proper Way to do it!</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>A</span>re you looking for some of the ways on how to drill on your tiled <wbr class="w480 w960"></wbr>wall? Below is the simple <wbr class="w481 w1799"></wbr>approach <wbr class="w961"></wbr>to secure the tiles that you <wbr class="w480"></wbr>start <wbr class="w960 w1800"></wbr>on drilling. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>S</span>elect Drill Bit. You have to understand that the regular drill bit <wbr class="w480 w960"></wbr>was not strong enough. You will <wbr class="w481 w1799"></wbr>also <wbr class="w961"></wbr>have a hard time drilling <wbr class="w480 w960 w1800"></wbr>through the hard tile surface. There are 2 common drill bits <wbr class="w480 w481 w960 w1799"></wbr>recommended <wbr class="w961"></wbr>for such task. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Y</span>ou can make use of carbide tipped masonry drill bits as the most <wbr class="w480 w960"></wbr>widely used and known for tile <wbr class="w481 w961 w1799"></wbr>drill. These are designed to get <wbr class="w480 w960 w1800"></wbr>through the rock hard surfaces. These can be used even without <wbr class="w480 w481 w960 w961 w1799"></wbr>causing the tile to crack or break. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>he other one is known as the diamond tipped drill bit. This is <wbr class="w480 w960"></wbr>durable and is recommended by a <wbr class="w481 w1799"></wbr>lot <wbr class="w961"></wbr>of professional individuals <wbr class="w480 w960"></wbr>for a <wbr class="w1800"></wbr>boring hard tile surface. This can be very expensive (Not <a href="http://TileDrill.com"><wbr class="w480 w481 w960 w961 w1799"></wbr>TileDrill.com</a>) but you may still want to spend your money on it.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-8f3d5324-a5fb-46c4-800a-8ee0256041ae-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="ac26cc11-c709-4d08-9770-051024cec6eb" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-ac26cc11-c709-4d08-9770-051024cec6eb"><div kind="group" index="column" class="group column group column" id="u-ac26cc11-c709-4d08-9770-051024cec6eb-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-ac26cc11-c709-4d08-9770-051024cec6eb-g-column-t-paragraph"><p><span class="first-letter">B</span>reaking Ground. The hardest part of tile drilling without <wbr class="w480"></wbr>ruining <wbr class="w960"></wbr>it is on getting through the <wbr class="w481 w961 w1799"></wbr>glazed hardened outer <wbr class="w480"></wbr>surface. <wbr class="w960 w1800"></wbr>Remember that tiles are known to be &#x201C;strong&#x201D;. They can <wbr class="w480"></wbr>also <wbr class="w481 w960 w961 w1799"></wbr>withstand the different types of abuses.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>hey are known for their durability and for being drilling <wbr class="w480 w960"></wbr>resistant. The bit can skip around the <wbr class="w481 w961 w1799"></wbr>surface than bite to the tile. <wbr class="w480 w960"></wbr>But, <wbr class="w1800"></wbr>there are some tricks of trade you can employ to do this <wbr class="w480 w481 w960 w1799"></wbr>effectively.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Y</span>ou can start by making an X mark on the tile since this will <wbr class="w480"></wbr>serve <wbr class="w960"></wbr>as your guide in drilling. Use <wbr class="w481 w961 w1799"></wbr>masking tape for this process <wbr class="w480"></wbr>is <wbr class="w960 w1800"></wbr>essential. Make sure that your measure it again after placing <wbr class="w480"></wbr>the <wbr class="w481 w960 w961 w1799"></wbr>masking tape. This is to make it sure that it is not misplaced. <wbr class="w480"></wbr>And <wbr class="w960 w1800"></wbr>then, start drilling into the <wbr class="w481 w961 w1799"></wbr>masking tape. Moreover, the <wbr class="w480"></wbr>masking <wbr class="w960"></wbr>tape provides your bit with an adequate &#x201C;surface <wbr class="w480"></wbr>traction&#x201D; <wbr class="w481 w1799"></wbr>for <wbr class="w961"></wbr>that <wbr class="w960 w1800"></wbr>accurate result. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>&#xB7;</span></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>B</span>oring Through: Once you start drilling, be patient in doing it <wbr class="w480 w960"></wbr>until it breaks through.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="e1e497ef-84d5-4365-a16b-ca4a0639192b" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b"><div kind="group" index="column" class="group column group column" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-e1e497ef-84d5-4365-a16b-ca4a0639192b-g-column-t-paragraph"><p><span class="first-letter">I</span>f your tile is hard, this will take several times. Thus, you need to <wbr class="w480 w960"></wbr>start slowly using while <wbr class="w481"></wbr>gradually <wbr class="w961 w1799"></wbr>increasing the speed 800 &#x2013; <wbr class="w480"></wbr>1000 <wbr class="w960 w1800"></wbr>RPM. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>B</span>ear in mind that tile drilling is not about the speed but the <wbr class="w480 w960"></wbr>persistence. You need to apply a firm <wbr class="w481 w961 w1799"></wbr>and constant pressure. This <wbr class="w480 w960"></wbr>should <wbr class="w1800"></wbr>not be in excess since this causes a tile breakage. You drill <wbr class="w480 w960"></wbr>tip <wbr class="w481 w961 w1799"></wbr>must be kept &#x201C;lubricated&#x201D; to avoid it from wearing down, <wbr class="w480 w960"></wbr>breaking or <wbr class="w1800"></wbr>overheating. The safest way <wbr class="w481 w1799"></wbr>of <wbr class="w961"></wbr>lubricating and <wbr class="w480"></wbr>cooling <wbr class="w960"></wbr>is by applying water. You can create a hose system for you <wbr class="w480"></wbr>to best <wbr class="w481 w960"></wbr>deliver <wbr class="w1799"></wbr>a <wbr class="w961 w1800"></wbr>constant water trickle on the bit; you can also <wbr class="w480"></wbr>spray it with <wbr class="w960"></wbr>water. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>T</span>he Backside: Once you get through the tile, the pressure is off. <wbr class="w480"></wbr>To <wbr class="w960"></wbr>finish the project, you need to <wbr class="w481 w961 w1799"></wbr>drill to push through the <wbr class="w480"></wbr>mounting <wbr class="w960 w1800"></wbr>surface or wall board. You need to decrease the <wbr class="w480"></wbr>pressure and <wbr class="w481 w961 w1799"></wbr>speed. <wbr class="w960"></wbr>And then, simply switch it to a regular tile <wbr class="w480"></wbr>drill bit to end the <wbr class="w1800"></wbr>hole </p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-alternate-g-heading-t-headline-a">Tiles and tiling feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title w_list w_data w_short_list w_short_data layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_short_headline w_short_title w_long_paragraph w_long_text layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-desktop-l-one-3-l-one"></div><style id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-color">body{background-color: rgba(211, 200, 210, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title w_list w_data w_short_list w_short_data layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_short_headline w_short_title w_long_paragraph w_long_text layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-cinema-l-one-3-l-one"></div><style id="u-e5a442fd-055d-4fff-a3b0-f0cc7124025c-color">body{background-color: rgba(211, 200, 210, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1627,9 +1662,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1730,7 +1767,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -1995,7 +2217,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
